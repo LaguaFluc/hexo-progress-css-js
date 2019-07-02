@@ -2,7 +2,7 @@ Planned on July 1, 2019.
 ## 1 - 入门
 - [ ] 看上10个例子    
 程度要求：知道大致有什么  
-进度： 10%  
+进度： 10%   -  50%(2019.7.2)  
 (1) [前端入门级之如何从零开始前端（估计要被人鄙视成LOW货了）入门篇](https://www.cnblogs.com/LoveOrHate/p/4442275.html)<br />
 - [ ] 找10个例子跟着写，补充知识  
 (1) [前端入门级之如何从零开始前端（估计要被人鄙视成LOW货了）入门篇](https://www.cnblogs.com/LoveOrHate/p/4442275.html)<br />
