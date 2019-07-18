@@ -1,6 +1,6 @@
 Planned on July 1, 2019.
 ## 1 - 入门
-- [ ] 看上10个例子    
+- [x] 看上10个例子    
 程度要求：知道大致有什么  
 进度： 10%   -  50%(2019.7.2)  -100%(7.6)  
 (1) [前端入门级之如何从零开始前端（估计要被人鄙视成LOW货了）入门篇](https://www.cnblogs.com/LoveOrHate/p/4442275.html)<br />
@@ -13,10 +13,10 @@ Planned on July 1, 2019.
   - [ ] 学习[W3cschool](https://www.w3cschool.cn/) CSS样式，自己设计一个相似网页
   - [ ] 学习[菜鸟教程](https://www.runoob.com/) CSS样式，自己设计一个相似网页
   - [ ] 模仿[崔庆才网站](https://cuiqingcai.com/) CSS样式，自己设计一个相似网页
-- [ ] 找一篇完整教程，跟下来，学习  
+- [x] 找一篇完整教程，跟下来，学习 - 7.16  
 choose one below:  
 - - [ ] [MDN-CSS学习教程](https://developer.mozilla.org/zh-CN/docs/Learn/CSS)
-- - [ ] [W3cschool-教程+实例](https://www.w3cschool.cn/css/)
+- - [x] [W3cschool-教程+实例](https://www.w3cschool.cn/css/)
 - - [ ] [CSS3-学习教程](https://www.runoob.com/css/css-examples.html)  
 ### practise 
 - [ ] [CSS实例](https://www.runoob.com/css/css-examples.html)
