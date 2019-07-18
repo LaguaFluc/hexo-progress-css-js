@@ -8,8 +8,8 @@ Planed on July 1, 2019.
 - [x] 跟着一个较为简单的JS入门教程跟下来，学习，每天总结  
 **choose one below**      
 - [ ] [菜鸟教程-JavaScipt](https://www.runoob.com/js/js-tutorial.html)
-- [ ] [W3Cschool-JavaScipt](https://www.w3cschool.cn/javascript/)  
-doing it right now.(7.6-)
+- [x] [W3Cschool-JavaScipt](https://www.w3cschool.cn/javascript/)  
+doing it right now.(7.6-7.18)
 # 运用到博客
 实现README.md中的功能，就不贴了  
 
