@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First-TRY</title>
+    <style>
+        button {
+            margin-bottom: 10px;
+        }
+        
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p> 输入章节</p>
+    <p> 章节数：
+        <input type="number" id="chaps" value=3>
+    </p>
+    <!-- <button onclick="getChaps()">Click me!</button> -->
+
+    <!-- <button onclick="getChaps()">获取章节数</button> -->
+    <button onclick="geneSections()"> 点击我输入每章的小节数</button>
+
+    <div id="inputSection"></div>
+    <div id="inputProgress"></div>
+    <button onclick="geneProgress()"> 生成输入进度框</button>
+    <!-- <button onclick="getProgress()">点击查看进度</button> -->
+    <button onclick="calcProgress()"> 计算进度</button>
+    <script>
+        // 读取输入的章节 
+        // get chapters 
+        function getChaps() {
+            var chapValue = document.getElementById("chaps").value;
+            chapLen = parseInt(chapValue);
+            // 将字符型数据转化为数值型数据 
+            // alert(chapLen); return chapLen; 
+        }
+        // 根据章节数，生成输入框，给用户输入每个章节中的小节数 
+        // 暂时想到的是：用户输入数字，程序自动计算 
+        // generatesections
+        function geneSections() {
+            // 获取章节数 
+            var chapLen = getChaps();
+            // var text = ""; 
+            for (var i = 0; i < chapLen; i++) {
+                var testDiv = document.getElementById("inputSection");
+                var testinput = document.createElement("input");
+                testinput.class = "inputSections";
+                testinput.type = "number";
+                testDiv.appendChild(testinput);
+            }
+        }
+
+        // 收集输入的章节数 
+        function collectSections() {
+            var sects = []; // 待提取的元素节点 
+            // var preSects=document.getElementsByClassName( "inputSections"); 
+            var html = $("input[class='inputSections']").html();
+            console.log(html) //123 // console.log(preSects); 
+            for (var i = 0; i < preSects.length; i++) {
+                preValue = parseInt(preSects[i].value);
+                sects.push(preSects[i].preValue);
+            }
+            // geneProgress(); 
+            // console.log(sects); return sects; 
+        }
+
+        // 生成进度输入框 
+        function geneProgress() {
+            var sectFrame = document.getElementById("inputProgress");
+            // 提示用户输入进度 
+            var inProgress = document.createElement("input");
+            var p = document.createElement("p");
+            var myText = document.createTextNode("输入你的进度");
+            p.appendChild(myText);
+            sectFrame.appendChild(p);
+            inProgress.type = "number";
+            inProgress.id = "myProgress";
+            // inProgress.value="输入你的进度：" ; 
+            // p.value="输入你的进度" ; 
+            // sectFrame.appendChild(p); sectFrame.appendChild(inProgress);
+        }
+
+        // 用户输入进度之后，获取当前进度，便于随后计算进度
+        function getProgress() {
+            preValue = document.getElementById("myProgress").value;
+            nowProgress = parseFloat(preValue);
+            // alert(nowProgress); 
+            return nowProgress;
+        }
+
+        function calcProgress() {
+            var sects = collectSections();
+            alert(sects[0]);
+            var nowProgress = getProgress();
+            // alert(nowProgress); 
+            function sum(arr) {
+                var s = 0;
+                for (var i = arr.length - 1; i >= 0; i--) {
+                    s += arr[i];
+                }
+                return s;
+            }
+            totalTask = sum(sects);
+            // totalTask = sects.reduce((n, m) => n + m); 
+            // 小于3的都已经完成 
+            done = 0;
+            for (var i = 0; i <
+                parseInt(nowProgress); i++) {
+                done += sects[i];
+            }
+            done += (10 * (nowProgress * 10 - parseInt(nowProgress) * 10)) / 10;
+            yourProgress = done / totalTask;
+            // alert(totalTask); 
+            return yourProgress;
+        }
+    </script>
+</body>
+
+</html>
